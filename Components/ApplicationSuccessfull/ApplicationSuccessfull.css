@@ -34,9 +34,8 @@
   display: grid;
   margin-bottom: 5%;
   text-align: center;
-
-  margin: 0 auto;
-  padding-bottom: 1rem;
+  margin: 3% auto;
+  padding: 1rem 0 1rem 0;
 }
 .paidStatus h4 {
   font-size: 0.9rem;
@@ -118,5 +117,5 @@
   margin-bottom: 1%;
 }
 .ApplicationSuccessfull footer.Appstore .store img {
-  width:var(--footerAppStoreImage);
+  width: var(--footerAppStoreImage);
 }
