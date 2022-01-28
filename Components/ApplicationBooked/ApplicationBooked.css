@@ -64,7 +64,7 @@
   .patience-info {
   display: grid;
   grid-template-columns: 29% 10% 50%;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   white-space: nowrap;
 }
 .ApplicationBooked
