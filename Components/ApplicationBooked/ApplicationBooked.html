@@ -11,8 +11,223 @@
       href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../root.css" />
-    <link rel="stylesheet" href="./ApplicationBooked.css" />
+    <!-- <link rel="stylesheet" href="../../root.css" /> -->
+    <!-- <link rel="stylesheet" href="./ApplicationBooked.css" /> -->
+    <style>
+      body,
+      html,
+      *,
+      *::before,
+      *::after,
+      h1,
+      p,
+      ul,
+      li,
+      ol {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        --primary: #2d80b5;
+        --black: #777777;
+        font-family: "Poppins";
+
+        /* // height of the header-top  */
+        --headerTopHeight: 1.2rem;
+
+        /* // logo size */
+        --logo-width: 10rem;
+
+        /* // header titleproperty */
+        --headerFontSize: 1.13rem;
+        --headerLetterSpacing: -0.2px;
+        --headerFontWeight: 600;
+        --headerLineHeight: 2;
+        --headerColor: #00000089;
+        --headerMargin: 2% 0;
+
+        /* // most of all description font-size */
+        --descriptionFontSize: 0.8rem;
+
+        /*   footer h1 text(Download the Ubora Health App); */
+        --footerDownloadAppFontsize: 0.92rem;
+
+        /* footer App store size of the image */
+        --footerAppStoreImage: 20rem;
+      }
+      html::-webkit-scrollbar {
+        display: none;
+      }
+
+      .ApplicationBooked .ApplicationBooked_top {
+        background-color: var(--primary);
+        height: var(--headerTopHeight);
+      }
+      .ApplicationBooked .ApplicationBooked-Container {
+        padding: 1% 3%;
+      }
+      .ApplicationBooked header .header_log {
+        margin: 2% 0;
+      }
+      .ApplicationBooked header .header_log img {
+        width: var(--logo-width);
+      }
+      .ApplicationBooked header .title {
+      }
+      .ApplicationBooked header .title h1 {
+        font-size: var(--headerFontSize);
+        letter-spacing: var(--headerLetterSpacing);
+        font-weight: var(--headerFontWeight);
+        line-height: var(--headerLineHeight);
+        color: var(--headerColor);
+        margin: var(--headerMargin);
+      }
+
+      .ApplicationBooked .Body_content section {
+      }
+      .ApplicationBooked .Body_content section .appoinment_Deatiles {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1.5px solid #c7c7c7;
+        border-radius: 15px;
+        opacity: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5%;
+      }
+      .ApplicationBooked
+        .Body_content
+        section
+        .appoinment_Deatiles
+        .img-container {
+        /* width: 10rem; */
+      }
+      .ApplicationBooked
+        .Body_content
+        section
+        .appoinment_Deatiles
+        .img-container
+        img {
+        width: 100%;
+      }
+      .ApplicationBooked .Body_content section .appoinment_Deatiles .deatiles {
+        padding: 5% 0 0 4.5%;
+      }
+      .ApplicationBooked
+        .Body_content
+        section
+        .appoinment_Deatiles
+        .deatiles
+        .intro {
+        color: var(--primary);
+        font-size: 1.2rem;
+        letter-spacing: -0.2px;
+        font-weight: 600;
+        margin-bottom: 1%;
+        opacity: 0.8;
+      }
+
+      .ApplicationBooked
+        .Body_content
+        section
+        .appoinment_Deatiles
+        .deatiles
+        .patience-info {
+        display: grid;
+        grid-template-columns: 29% 10% 50%;
+        font-size: 0.85rem;
+        white-space: nowrap;
+      }
+      .ApplicationBooked
+        .Body_content
+        section
+        .appoinment_Deatiles
+        .deatiles
+        .appoinemts-description {
+        margin-top: 1.1rem;
+        display: flex;
+        flex-direction: column;
+        height: 55%;
+        justify-content: space-between;
+      }
+
+      .ApplicationBooked
+        .Body_content
+        section
+        .appoinment_Deatiles
+        .deatiles
+        .patience-info
+        .title {
+        color: #7879799c;
+        opacity: 0.7;
+      }
+
+      .ApplicationBooked
+        .Body_content
+        section
+        .appoinment_Deatiles
+        .deatiles
+        .patience-info
+        .dot {
+        color: #8c9094;
+        font-weight: 600;
+      }
+
+      .ApplicationBooked
+        .Body_content
+        section
+        .appoinment_Deatiles
+        .deatiles
+        .patience-info
+        .description {
+        color: #5e5e60;
+        font-weight: 600;
+        opacity: 0.8;
+      }
+
+      .ApplicationBooked .Body_content section h2 {
+        color: var(--black);
+        margin: 2.5% 0;
+        font-size: var(--descriptionFontSize);
+        font-weight: 500;
+      }
+      .ApplicationBooked .Body_content section h3 {
+        color: var(--black);
+        margin: 2.5% 0;
+        font-size: var(--descriptionFontSize);
+        font-weight: 500;
+        margin: 3% 0;
+      }
+      .ApplicationBooked .Body_content .contact_us {
+      }
+      .ApplicationBooked .Body_content .contact_us p {
+        color: var(--black);
+        margin: 2.5% 0;
+        font-size: var(--descriptionFontSize);
+        font-weight: 500;
+        margin: 7% 0;
+      }
+
+      @media screen and (min-width: 118em) {
+        .ApplicationBooked .Body_content .contact_us p {
+          margin: 6% 0;
+        }
+      }
+      .ApplicationBooked footer.Appstore {
+        margin: 3% 0 1% 0;
+      }
+      .ApplicationBooked footer.Appstore h1 {
+        color: var(--primary);
+
+        font-size: var(--footerDownloadAppFontsize);
+        letter-spacing: -0.2px;
+        font-weight: 600;
+        margin-bottom: 1%;
+      }
+      .ApplicationBooked footer.Appstore .store img {
+        width: var(--footerAppStoreImage);
+      }
+    </style>
   </head>
   <body>
     <div class="ApplicationBooked">
@@ -35,7 +250,6 @@
         </div>
         <div class="Body_content">
           <section>
-        
             <div class="appoinment_Deatiles">
               <div class="deatiles">
                 <h1 class="intro">Appointment Details</h1>
