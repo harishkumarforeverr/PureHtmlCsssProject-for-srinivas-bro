@@ -58,8 +58,7 @@
   section
   .paidStatus-description
   .description {
-  margin-left: 1rem;
-  /* background-color: red; */
+  margin-left: 1rem; 
   justify-self: end;
 }
 .ApplicationSuccessfull .Body_content section .paidStatus .paidStatus-info {
