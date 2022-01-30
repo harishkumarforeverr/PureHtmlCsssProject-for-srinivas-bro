@@ -4,3 +4,7 @@ ol.router {
   justify-content: space-evenly;
   height: 70vh;
 }
+.root-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
